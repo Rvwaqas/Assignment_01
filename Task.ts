@@ -21,7 +21,12 @@ console.log(name1.toLowerCase());
 //Start
 
 let auther:string="hamza";
-console.log(auther + ' once said, “A person who never made a mistake never tried anything new.”');
+console.log(  `${auther.toUpperCase()} once said, “A person who never made a mistake never tried anything new.”`);
+console.log(  `${auther.toLowerCase()} once said, “A person who never made a mistake never tried anything new.”`);
+
+let titleCase=auther.split(' ').map(word=> word.charAt(0).toUpperCase()+ word.substr(1).toLowerCase()).join(' ')
+console.log(  `${titleCase} once said, “A person who never made a mistake never tried anything new.”`);
+
 //end
 
 //Task:4 Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name in a variable called famous_person. Then compose your message and store it in a new variable called message. Print your message.
@@ -46,15 +51,12 @@ console.log(4*2);
 console.log(16/2);
 //end
 
-//Task:7 Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message.
+//Task:7 8 Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message.
 //Start
-
+// My name is waqas
+// Today date is 18.2.2024
 let num1:number=8;
 console.log(`${num1} is my favorite numver`);
-//end
-
-//Task:8Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. If you don’t have anything specific to write because your programs are too simple at this point, just add your name and the current date at the top of each program file. Then write one sentence describing what the program does.
-//start
 //end
 
 //Task:9 Names: Store the names of a few of your friends in a array called names. Print each person’s name by accessing each element in the list, one at a time.

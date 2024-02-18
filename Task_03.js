@@ -167,3 +167,111 @@ for (var i in pet) {
     console.log("A ".concat(pet[i], " would make a great pet."));
 }
 console.log(" Any of these animals would make a great pet!");
+//end
+//task 36
+//task:37
+function make_shirt(size, mess) {
+    if (size === void 0) { size = "Large"; }
+    if (mess === void 0) { mess = "I love javascript"; }
+    console.log("your shirt size is ".concat(size, " and its ").concat(mess));
+}
+make_shirt("small", "Nice shirt");
+make_shirt();
+make_shirt("medium");
+// task:38
+function describe_city(city, country) {
+    if (country === void 0) { country = "India"; }
+    console.log("".concat(city, " is in ").concat(country));
+}
+describe_city("Dehli");
+describe_city("Karachi", "Pakistan");
+describe_city("Lahore", "Pakistan");
+//end
+//Task:39
+function city_country(city, country) {
+    return ("\"".concat(city, ",").concat(country, "\""));
+}
+var rest1 = city_country("Karachi", "Pakistan");
+console.log(rest1);
+var rest2 = city_country("New York", "USA");
+console.log(rest2);
+var rest3 = city_country("Canberra", "Australia");
+console.log(rest3);
+function make_album(artist, title, tracks) {
+    var album = {
+        artist: artist,
+        title: title,
+    };
+    if (tracks) {
+        album.tracks = tracks;
+    }
+    return album;
+}
+var result_1 = make_album("h1", "Hello");
+console.log(result_1);
+var result_2 = make_album("h2", "Hello", 6);
+console.log(result_2);
+var result_3 = make_album("h3", "Hello", 19);
+console.log(result_3);
+//end
+//Task 41
+function show_magicians(name) {
+    return name;
+}
+var result_4 = show_magicians(["name1", "name2", "name3"]);
+console.log(result_4);
+//Task 42
+function show(name) {
+    for (var i in name) {
+        console.log(name[i]);
+    }
+}
+function make_great(name) {
+    for (var i in name) {
+        console.log("The Great ".concat(name[i]));
+    }
+}
+var magic_list = ['person_1', 'person_2', 'person_3', 'person_4'];
+show(magic_list);
+make_great(magic_list);
+// Task 43
+function show1(name) {
+    for (var i in name) {
+        console.log(name[i]);
+    }
+}
+function make_great2(name) {
+    var outcome = name.map(function (za) { return "The Great".concat(za, " !"); });
+    return outcome;
+}
+show1(magic_list);
+var new_outcome = make_great2(magic_list);
+console.log(new_outcome);
+//Task 44
+function Sandwiches() {
+    var items = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        items[_i] = arguments[_i];
+    }
+    items.forEach(function (item) {
+        console.log("This material need for making sandwiche ".concat(item));
+    });
+}
+Sandwiches("break", "egg", "rice");
+Sandwiches("break", "halwa", "baryani");
+Sandwiches("plate", "egg", "spoon"), "car";
+function Create_car(manufacturer, model_name, model) {
+    var items = [];
+    for (var _i = 3; _i < arguments.length; _i++) {
+        items[_i - 3] = arguments[_i];
+    }
+    var Car = {
+        manufacturer: manufacturer,
+        model_name: model_name,
+        model: model,
+        items: items,
+    };
+    return Car;
+}
+var lb = Create_car("Sazuki", "Mehran", 2004, { color: "red", airbag: true });
+console.log(lb);
